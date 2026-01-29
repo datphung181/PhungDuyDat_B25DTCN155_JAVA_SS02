@@ -1,42 +1,9 @@
-let currentBooks = 0;
+let quantity  = prompt("Nhap so luong sach trong thu vien");
 
-alert("1 : them 5 quyen\n 2 : Them 15 quyen \n 3 : them 36 quyen \n");
-let caseChoice = prompt("Nhap so sach ban muon them");
-
-switch (caseChoice) {
-    case "1":
-        console.log("Da them 5 quyen!");
-        currentBooks = Number(currentBooks) + 5;
-        break;
-
-    case "2":
-        console.log("Da them 15 quyen!");
-        currentBooks = Number(currentBooks) + 15;
-        break;
-
-    case "3":
-        console.log("Da them 36 quyen!");
-        alert()
-        currentBooks = Number(currentBooks) + 36;
-        break;
-
-    default:
-        console.log("helo")
-        break;
-}
-
-console.log(`Hien dang co ${currentBooks} quyen sach`);
-if (currentBooks < 10) {
-    console.log("thu vien co it sach");
-    alert("thu vien co it sach")
-} 
-
-else if (currentBooks >= 10 && currentBooks <= 20) {
-    console.log("thu vien co so luong sach vua du");
-    alert("thu vien co so luong sach vua du");
-} 
-
-else {
-    console.log("thu vien co nhieu sach");
-    alert("thu vien co nhieu sach");
+if(quantity<10){
+    console.log("Thư viện có ít sách")
+}else if(10<= quantity && quantity<=20){
+    console.log("Thư viện có số lượng sách vừa đủ")
+}else{
+    console.log("Thư viện có nhiều sách")
 }
