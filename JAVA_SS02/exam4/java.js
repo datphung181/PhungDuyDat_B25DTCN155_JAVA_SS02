@@ -1,22 +1,11 @@
-let bookName = prompt("Nhap ten sach cua ban");
-let lendUser = prompt("Nhap ten nguoi muon");
-let rating = +prompt("nhap muc do yeu thich cua ban 1 - 5");
+let  bookName = prompt("Nhap ten sach");
+let whoBorrow = prompt("Nhap ten nguoi muon");
+let favourite =prompt("mức độ yêu thích (một giá trị từ 1 đến 5, với 1 là ít thích nhất và 5 là rất thích)");
 
-bookName = bookName.trim();
-lendUser = lendUser.trim();
-rating = Math.floor(rating);
-
-if (rating == 5 || rating == 4) {
-    alert("day la cuon sach yeu thich cua ban, hay doc ngay");
-} 
-else if (rating == 3) {
-    alert("sach nay kha on , co the muon");
-} 
-else if (rating == 2 || rating == 1) {
-    alert("sach nay ban co the can nhac muon lai sau");
-} 
-else {
-    alert("co su nham lan nao do roi");
+if(favourite===5 || favourite===4){
+    console.log("Đây là cuốn sách yêu thích của bạn, hãy đọc ngay!");
+}else if (favourite === 3 ){
+    console.log("Sách này khá ổn, có thể mượn")
+}else{
+    console.log("Sách này bạn có thể cân nhắc mượn lại sau")
 }
-
-
